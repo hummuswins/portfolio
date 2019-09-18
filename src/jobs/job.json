@@ -1,0 +1,55 @@
+[
+  {
+    "key": "Google",
+    "job": "Software Engineer Intern",
+    "startDate": "01-2019",
+    "endDate": "04-2019",
+    "descriptions": [
+      "Anonymize billing data for security and improve against any potential bias when sampling data",
+      "Analyze and identify using machine learning for any potential clusters to reduce the sample size for an improved testing time",
+      "Implement a model that allows engineers to use in their testing pipeline"
+    ],
+    "location": "Seattle, WA",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+  },
+  {
+    "key": "Amazon",
+    "job": "Software Engineer Intern",
+    "startDate": "09-2018",
+    "endDate": "12-2018",
+    "descriptions": [
+      "Create a single global endpoint for an API that loans out unused EC2 servers to customers and internal teams for testing or diagnosing problems in their services",
+      "Design a new UI that will serve up the new endpoint with better user experiences such as caching, searching, and error feedback",
+      "Add an extra layer of authentication through HTTP protocols"
+    ],
+    "location": "Seattle, WA",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+  },
+  {
+    "key": "IBM",
+    "job": "Software Engineer Intern",
+    "startDate": "06-2018",
+    "endDate": "09-2018",
+    "descriptions": [
+      "Work on the IBM Watson Compare and Comply API, which is used to automate contracts and invoices",
+      "My project compares invoices that were parsed from PDF format and find duplicate invoices based on a certain parameters",
+      "Implement my entity flow script in Scala that allows for fuzzy matching and variant name generation"
+    ],
+    "location": "San Jose, CA",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
+  },
+  {
+    "key": "UC Irvine, Donald Bren School of ICS",
+    "job": "Reseach Assistant",
+    "startDate": "09-2018",
+    "endDate": "12-2018",
+    "descriptions": [
+      "Assist with the NASA JPL Ice Sheet System Model – Virtual Earth System Lab",
+      "Develop a website and a virtual reality game to educate the masses about the impact of global warming of the ice sheets in Columbia, Greenland, and the Antarctic",
+      "Research about how cloudy weather can affect weather and its effect on ice mesh",
+      "Created the front-end interface with Node.js and modules such as three.js and WebGL"
+    ],
+    "location": "Irvine, CA",
+    "img": "https://tech.uci.edu/halloffame/images/imgs/uci-ics.png"
+  }
+]
