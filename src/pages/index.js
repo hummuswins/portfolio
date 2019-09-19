@@ -7,7 +7,7 @@ import JobCard from "../components/jobcard"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import JSONData from "../jobs/job.json"
-import "./index.css"
+
 library.add(fab, faCheckSquare, faCoffee)
 let newArr = []
 let i = 0,
@@ -55,6 +55,13 @@ const IndexPage = () => (
     </Container>
     <br />
     <h2>Jobs</h2>
+    <style type="text/css">
+      {`@media (min-width: 768px) {
+        .card-columns {
+          column-count: 2;
+        }
+      }`}
+    </style>
     <CardColumns>
       {newArr.map(obj => {
         return <JobCard obj={obj} />
