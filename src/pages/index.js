@@ -2,7 +2,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
 import React from "react"
-import { Card, CardColumns, Container, Row, Col, Image } from "react-bootstrap"
+import { CardColumns, Col, Container, Image, Row } from "react-bootstrap"
 import JobCard from "../components/jobcard"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,12 +14,12 @@ let i = 0,
   j = 1
 // newArr[0].push(0)
 // console.log(newArr)
-for (let item in JSONData) {
-  if (item != 0 && item % 2 === 0) {
+for (let jsonDataKey in JSONData) {
+  if (jsonDataKey !== "0" && jsonDataKey % 2 === 0) {
     j += 1
     i = 0
   }
-  newArr.splice(j + i++ * j - 1, 0, JSONData[item])
+  newArr.splice(j + i++ * j - 1, 0, JSONData[jsonDataKey])
 }
 console.log(newArr)
 const IndexPage = () => (
@@ -67,6 +67,12 @@ const IndexPage = () => (
         return <JobCard obj={obj} />
       })}
     </CardColumns>
+    {/*<h2>Skills</h2>*/}
+    {/*<p>*/}
+    {/*<span class="border rounded border-danger p-2 mx-1 bg-danger text-white">C++</span>*/}
+    {/*<span class="border rounded border-danger p-2 mx-1 bg-danger text-white">Java</span>*/}
+    {/*<span class="border rounded border-danger p-2 mx-1 bg-danger text-white">Python</span>*/}
+    {/*</p>*/}
   </Layout>
 )
 

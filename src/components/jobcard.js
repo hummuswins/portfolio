@@ -1,7 +1,9 @@
 import React from "react"
 import { Card, ListGroup } from "react-bootstrap"
 
-function JobCard({ obj: { key, startDate, endDate, descriptions, img, location, job} }) {
+function JobCard({
+  obj: { key, startDate, endDate, descriptions, img, location, job },
+}) {
   const months = [
     "Jan",
     "Feb",
@@ -22,34 +24,33 @@ function JobCard({ obj: { key, startDate, endDate, descriptions, img, location, 
   const endYear = parseInt(endDate.split("-")[1])
 
   return (
-    <Card className="h-100">
-      <Card.Header
-      // style={{ backgroundColor: "#d4e8f3" }}
-      >
+    <Card className="h-100 shadow-lg" style={{ borderColor: "#c0deed" }}>
+      <Card.Header style={{ backgroundColor: "#c0deed", color: "black", borderBottomColor:"#c0deed" }}>
         {startMonth} {startYear} - {endMonth} {endYear}
       </Card.Header>
       <div style={{ margin: "2em" }}>
-        <Card.Img
-          variant="top"
-          src={img}
-        />
+        <Card.Img variant="top" src={img} />
       </div>
 
       <Card.Body>
         <Card.Title>{key}</Card.Title>
-        <Card.Title><h6>{job}</h6></Card.Title>
+        <Card.Title>
+          <h6>{job}</h6>
+        </Card.Title>
         <Card.Text>{location}</Card.Text>
         <ListGroup variant="flush">
-          {descriptions.map((string) => {
+          {descriptions.map(string => {
             return (
-              <ListGroup.Item>
+              <ListGroup.Item
+                style={{
+                  borderTop: "1px solid #0091b5",
+                }}
+              >
                 {string}
               </ListGroup.Item>
             )
           })}
-
         </ListGroup>
-        {/* <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
     </Card>
   )

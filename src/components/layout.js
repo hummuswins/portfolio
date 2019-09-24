@@ -24,7 +24,7 @@ const Layout = ({ children, addP }) => {
   `)
 
   return (
-    <>
+    <div style={{}}>
       <Header siteTitle={data.site.siteMetadata.title} addP={addP}/>
       <div
         style={{
@@ -36,7 +36,7 @@ const Layout = ({ children, addP }) => {
       >
         <main>{children}</main>
       </div>
-    </>
+    </div>
   )
 }
 
